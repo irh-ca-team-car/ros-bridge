@@ -1,0 +1,5 @@
+cat $1 |sed "s/\/usr\/bin\/env python/\/usr\/bin\/python3/" > $1.tmp
+cat $1.tmp > $1
+cat $1 |sed "s/\/usr\/bin\/python2/\/usr\/bin\/python3/" > $1.tmp
+cat $1.tmp > $1
+rm $1.tmp
